@@ -43,7 +43,7 @@ namespace calculatorApp
             this.equalButton = new System.Windows.Forms.Button();
             this.plusButton = new System.Windows.Forms.Button();
             this.multiplyButton = new System.Windows.Forms.Button();
-            this.devideButton = new System.Windows.Forms.Button();
+            this.divideButton = new System.Windows.Forms.Button();
             this.zeroButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.decimalButton = new System.Windows.Forms.Button();
@@ -72,7 +72,6 @@ namespace calculatorApp
             this.resultDisplay.Text = "0";
             this.resultDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resultDisplay.UseCompatibleTextRendering = true;
-            this.resultDisplay.Click += new System.EventHandler(this.resultDisplay_Click);
             // 
             // eightButton
             // 
@@ -206,16 +205,16 @@ namespace calculatorApp
             this.multiplyButton.UseVisualStyleBackColor = true;
             this.multiplyButton.Click += new System.EventHandler(this.multiplyButton_Click);
             // 
-            // devideButton
+            // divideButton
             // 
-            this.devideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.devideButton.Location = new System.Drawing.Point(320, 105);
-            this.devideButton.Name = "devideButton";
-            this.devideButton.Size = new System.Drawing.Size(98, 63);
-            this.devideButton.TabIndex = 14;
-            this.devideButton.Text = "/";
-            this.devideButton.UseVisualStyleBackColor = true;
-            this.devideButton.Click += new System.EventHandler(this.devideButton_Click);
+            this.divideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divideButton.Location = new System.Drawing.Point(320, 105);
+            this.divideButton.Name = "divideButton";
+            this.divideButton.Size = new System.Drawing.Size(98, 63);
+            this.divideButton.TabIndex = 14;
+            this.divideButton.Text = "/";
+            this.divideButton.UseVisualStyleBackColor = true;
+            this.divideButton.Click += new System.EventHandler(this.divideButton_Click);
             // 
             // zeroButton
             // 
@@ -258,7 +257,7 @@ namespace calculatorApp
             this.Controls.Add(this.decimalButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.zeroButton);
-            this.Controls.Add(this.devideButton);
+            this.Controls.Add(this.divideButton);
             this.Controls.Add(this.multiplyButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.equalButton);
@@ -295,7 +294,7 @@ namespace calculatorApp
         private System.Windows.Forms.Button equalButton;
         private System.Windows.Forms.Button plusButton;
         private System.Windows.Forms.Button multiplyButton;
-        private System.Windows.Forms.Button devideButton;
+        private System.Windows.Forms.Button divideButton;
         private System.Windows.Forms.Button zeroButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button decimalButton;
